@@ -1,0 +1,93 @@
+POST http://localhost:8000/api/user/login
+Content-Type: application/x-www-form-urlencoded
+
+email=test@test.com
+&password=test
+
+###
+
+POST http://localhost:8000/api/user/register
+Content-Type: application/x-www-form-urlencoded
+
+name=Odmin
+&email=test@test.com
+&password=test
+
+###
+
+POST http://localhost:8000/api/user/register
+Content-Type: application/x-www-form-urlencoded
+
+name=Manager
+&email=managert@test.com
+&password=ttest
+
+###
+
+POST http://localhost:8000/api/user/current
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijk1OWIzYWU2LWQxOGMtNGYzYS1hOTdhLWRkM2E5YmQ5YzJlNCIsImlhdCI6MTcyMzIwMDg1MSwiZXhwIjoxNzI1NzkyODUxfQ.4OlA0xKipdf4vLg1pknNDnp6Lx4S5OSQmwuXKNqYEDc
+
+###
+
+GET http://localhost:8000/api/employees
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijk1OWIzYWU2LWQxOGMtNGYzYS1hOTdhLWRkM2E5YmQ5YzJlNCIsImlhdCI6MTcyMzIwMDg1MSwiZXhwIjoxNzI1NzkyODUxfQ.4OlA0xKipdf4vLg1pknNDnp6Lx4S5OSQmwuXKNqYEDc
+
+###
+
+POST http://localhost:8000/api/employees/add
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijk1OWIzYWU2LWQxOGMtNGYzYS1hOTdhLWRkM2E5YmQ5YzJlNCIsImlhdCI6MTcyMzIwMDg1MSwiZXhwIjoxNzI1NzkyODUxfQ.4OlA0xKipdf4vLg1pknNDnp6Lx4S5OSQmwuXKNqYEDc
+
+{
+    "firstName": "Patrik",
+    "lastName": "Enik",
+    "address": "Moscow",
+    "age":"43"
+}
+
+###
+
+POST http://localhost:8000/api/employees/add
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImExYjM1ZDU2LWFiYTUtNGU4NS05NDdkLWNhOGQ0MGU3ZmE2OCIsImlhdCI6MTcyMzIxMDg2NiwiZXhwIjoxNzI1ODAyODY2fQ.4LSguM1XFpUxf6dkW_kO-NEj5ryH3kbCglcPLrSnF2w
+
+{
+    "firstName": "John",
+    "lastName": "Doe",
+    "address": "Orel",
+    "age":"22"
+}
+
+###
+
+GET http://localhost:8000/api/employees/0e853754-feb2-4ff8-868a-78544683edf7
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImExYjM1ZDU2LWFiYTUtNGU4NS05NDdkLWNhOGQ0MGU3ZmE2OCIsImlhdCI6MTcyMzIxMDg2NiwiZXhwIjoxNzI1ODAyODY2fQ.4LSguM1XFpUxf6dkW_kO-NEj5ryH3kbCglcPLrSnF2w
+
+
+###
+
+DELETE http://localhost:8000/api/employees/remove/0e853754-feb2-4ff8-868a-78544683edf7
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImExYjM1ZDU2LWFiYTUtNGU4NS05NDdkLWNhOGQ0MGU3ZmE2OCIsImlhdCI6MTcyMzIxMDg2NiwiZXhwIjoxNzI1ODAyODY2fQ.4LSguM1XFpUxf6dkW_kO-NEj5ryH3kbCglcPLrSnF2w
+
+{
+    "id":"0e853754-feb2-4ff8-868a-78544683edf7"
+}
+
+
+###
+
+PUT http://localhost:8000/api/employees/edit/0e853754-feb2-4ff8-868a-78544683edf7
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImExYjM1ZDU2LWFiYTUtNGU4NS05NDdkLWNhOGQ0MGU3ZmE2OCIsImlhdCI6MTcyMzIxMDg2NiwiZXhwIjoxNzI1ODAyODY2fQ.4LSguM1XFpUxf6dkW_kO-NEj5ryH3kbCglcPLrSnF2w
+
+{
+    "firstName": "Trototo",
+    "lastName": "Dodo",
+    "address": "Piter",
+    "age":"55",
+    "id":"0e853754-feb2-4ff8-868a-78544683edf7"
+}
