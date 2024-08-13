@@ -9,9 +9,9 @@ email=test@test.com
 POST http://localhost:8000/api/user/register
 Content-Type: application/x-www-form-urlencoded
 
-name=Odmin
-&email=test@test.com
-&password=test
+name=TestUser
+&email=testt@test.com
+&password=testtest
 
 ###
 
