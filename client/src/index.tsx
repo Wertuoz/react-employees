@@ -9,9 +9,11 @@ import { Paths } from "./paths";
 import { Login } from "./pages/login";
 import { Register } from "./pages/register";
 import { ConfigProvider, theme } from "antd";
+import { Auth } from "./features/auth/auth";
+import { Employees } from "./pages/employees";
 
 const router = createBrowserRouter([
-  { path: Paths.home, element: <h1>Employees</h1> },
+  { path: Paths.home, element: <Employees /> },
   { path: Paths.login, element: <Login /> },
   { path: Paths.register, element: <Register /> },
 ]);
@@ -23,7 +25,9 @@ root.render(
   <React.StrictMode>
     <Provider store={store}>
       <ConfigProvider theme={{ algorithm: theme.darkAlgorithm }}>
-        <RouterProvider router={router} />
+        <Auth>
+          <RouterProvider router={router} />
+        </Auth>
       </ConfigProvider>
     </Provider>
   </React.StrictMode>

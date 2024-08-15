@@ -38,7 +38,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijk1OWIzYWU2L
 
 POST http://localhost:8000/api/employees/add
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijk1OWIzYWU2LWQxOGMtNGYzYS1hOTdhLWRkM2E5YmQ5YzJlNCIsImlhdCI6MTcyMzIwMDg1MSwiZXhwIjoxNzI1NzkyODUxfQ.4OlA0xKipdf4vLg1pknNDnp6Lx4S5OSQmwuXKNqYEDc
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZiMWEzYWQwLTIxOTYtNDRmZS1hZWJiLTQ0NDI5NzFjMWZiNSIsImlhdCI6MTcyMzczNjU3MywiZXhwIjoxNzI2MzI4NTczfQ.VNbmfvfTyQmf0Dk5luiZFm3bU_D9d0otpwTfAuUDyHU
 
 {
     "firstName": "Patrik",
