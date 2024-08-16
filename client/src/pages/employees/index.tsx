@@ -26,13 +26,15 @@ export const Employees: FC = () => {
     if (!user) {
       navigate(`${Paths.login}`);
     }
-  }, []);
+  }, [navigate, user]);
+
+  const onAddEmployee = () => navigate(Paths.employeeAdd);
 
   return (
     <Layout>
       <CustomButton
         type="primary"
-        onClick={() => null}
+        onClick={onAddEmployee}
         icon={<PlusCircleOutlined />}
       >
         Add employee
