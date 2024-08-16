@@ -12,6 +12,7 @@ type Props = {
   shape?: ButtonShape;
   icon?: React.ReactNode;
   ghost?: boolean;
+  style?: React.CSSProperties;
 };
 
 export const CustomButton: FC<Props> = ({
@@ -24,6 +25,7 @@ export const CustomButton: FC<Props> = ({
   shape,
   icon,
   ghost,
+  style,
 }) => {
   return (
     <Form.Item>
@@ -36,6 +38,7 @@ export const CustomButton: FC<Props> = ({
         icon={icon}
         onClick={onClick}
         ghost={ghost}
+        style={style}
         // style={{
         //   background: "#f0f",
         //   alignItems: "center",

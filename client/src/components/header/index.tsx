@@ -23,8 +23,10 @@ export const Header = () => {
       <Space>
         <TeamOutlined className={styles.teamIcon} />
         <Link to={Paths.home}>
-          <CustomButton type="text" ghost>
-            <Typography.Title level={3}>Employees</Typography.Title>
+          <CustomButton type="text" ghost style={{ marginTop: 12 }}>
+            <Typography.Title level={3} style={{ paddingTop: 8 }}>
+              Employees
+            </Typography.Title>
           </CustomButton>
         </Link>
       </Space>
